@@ -1,0 +1,19 @@
+{
+    "default":{
+        "paths":["src/test/features/orangeHrmLogin.feature"],
+        "require":[
+            "src/test/steps/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule":["ts-node/register"],
+        "formatOptions":{
+            "snippetInterface": "async-await"
+        },
+        "timeout":30000,
+        "format":[
+            "html:test-results/report/cucumber-report.html",
+            "json:test-results/report/cucumber-report.json"
+        ],
+        "parallel": 2
+    }
+}
